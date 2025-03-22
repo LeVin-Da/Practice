@@ -19,6 +19,28 @@
             color: white;
             padding: 20px;
         }
+        /* Default background */
+body {
+    background-image: url("default-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Change background for portrait mode */
+@media (orientation: portrait) {
+    body {
+        background-image: url("portrait-bg.jpg");
+    }
+}
+
+/* Change background for landscape mode */
+@media (orientation: landscape) {
+    body {
+        background-image: url("landscape-bg.jpg");
+    }
+}
+
         h2{
             margin-top: -10px;
         }
