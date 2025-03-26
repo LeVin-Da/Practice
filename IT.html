@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My IT Journey</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
-           body {
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -16,58 +15,95 @@
         }
         header {
             height: 80px;
-
             padding: 20px;
         }
         h2{
-            margin-top: -10px;
+            margin-top: -50px;
+            color: antiquewhite;
+            size: 100px;
         }
         nav ul {
             list-style: none;
             padding: 0;
+            outline: flex;
+            background: rgba(29, 29, 34, 0.808); /* Light transparent white */
+            padding: 10px; /* Optional: Adds spacing inside the box */
+            border: 1px solid rgba(225, 226, 228, 0.3); /* Optional: Adds a subtle border */
+            width: auto;
+           
         }
         nav ul li {
             display: inline;
             margin: 0 15px;
+            padding: 10px;
+            
         }
         nav ul li a {
             color: white;
-            text-decoration: none;
-            font-size: 18px;
+            text-decoration:double;
+            font-size: 20px;
         }
         section {
-            padding: 50px;
+            margin-top: -10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        section h2{
+            margin-top: -10px;
+            font-size: 50px;
+            
+            font-weight: lighter;
+            background-size: auto;
+            text-shadow: 2px 2px 4px #e2d9d9;
+
+        }
+       
+        .BUTTON{
+            margin-top: 100px;
+            position: fixed, center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
         .button {
-    height: 200px;
-    width: 200px;
-    background-size: cover;
-    background-position: center;
-    
-}
+            height: 220px;
+            width: 170px;
+            background-size: 170px 170px;
+            background-position: top;    
+            background-repeat: no-repeat;
+            background-color: rgba(255, 255, 255, 0.2); /* White with 20% opacity */
+            border-color: rgb(175, 175, 179);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Pushes text to the bottom */
 
+            padding-bottom: 10px; /* Spacing for text */
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
         <nav>
+       
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="it.html">Mind</a></li>
-                <li><a href="bodybuilder.html">Body</a></li>
-                <li><a href="worshipper.html">Spirit</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="it.html">MIND</a></li>
+                <li><a href="bodybuilder.html">BODY</a></li>
+                <li><a href="worshipper.html">SPIRIT</a></li>
             </ul>
         </nav>
     </header>
     
     <section>
-        <h2>Welcome to Computer Engineering</h2>
+        <h2>WELCOME</h2>
         <p>Here, I showcase my projects, coding experiences, and learning journey in the tech industry.</p>
     </section>
-    <button class="button" style="background-image: url('Hardware.jpg');"></button>
-    <button class="button" style="background-image: url('Software.jpg');"></button>
-    <button class="button" style="background-image: url('Network.jpg');"></button>
-    
+    <div class = "BUTTON">
+        <button class="button" style="background-image: url('Hardware.jpg');">Hardware</button>
+        <button class="button" style="background-image: url('Software.jpg');">Software</button>
+        <button class="button" style="background-image: url('Network.jpg');">Network</button>
+    </div>
 </body>
 </html>
