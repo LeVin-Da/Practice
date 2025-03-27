@@ -96,19 +96,51 @@
             font-weight: bold;
             color: white;
         }
+        /*For Mobile View*/
         @media (max-width: 768px) {
             header {
-         
+            height: 80px;
             padding: 20px;
+            size: 10px;
             }
-            h2{
-            margin-top: -50px;
-            color: antiquewhite;
-            size: auto;
+            body{
+                background-image: url('ITMob.jpg');
+                background-size: cover;
+            }
+            section h2{
+                margin-top: -10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 40px;
+                height: 100px;
+                font-weight: lighter;
+                background-size: auto;
+                text-shadow: 2px 2px 4px #e2d9d9;
+            }
+            section {
+                margin-top: -10px;
+                display: flex;     
+            }
+            section p{
+                color: #e2d9d9;
+                font-size: 30px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-top: -10px;
+                position: center, relative;
+            }
+            .BUTTON{
+                margin-top: 50px;
+                flex-direction: column; /* Stack divs vertically */
+                justify-content: center;
+                gap: 20px;
             }
             .button {
-                width: 100%; /* Make buttons stretch on mobile */
-                height: 100%;
+                display: flex;
+            
+                flex-direction: column;
+                border-radius: 25px;
+                height: 305px;
+                width: 260px;
+                background-size: 250px 275px;
             }
             nav ul {
                 flex-direction: column;
