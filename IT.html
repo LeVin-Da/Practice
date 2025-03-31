@@ -7,29 +7,45 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('tech.jpg');
+          
+            background-color: #111; /* Dark background */
             background-size: cover;
             text-align: center;
+            border: #e2d9d9;
+            
         }
+        
+       
+       body div {
+        width: 90%; /* Keeps it centered */
+        max-width: auto; /* Prevents excessive stretching */
+        min-height: auto; /* Ensures a minimum height but allows expansion*/
+        margin: auto; /* Centers the frame */
+        padding: 20px;
+        background-image: url('tech1.jpg');
+        border: 15px solid black; /* Simulates a screen frame */
+        border-radius: 20px; /* Rounded edges like a tablet*/
+        overflow: hidden; /* Prevents unwanted scrolling */
+       }
         header {
             height: 80px;
             padding: 20px;
             margin-top: -10px;
         }
+       
         h2{
             margin-top: -50px;
             color: antiquewhite;
-            size: 100px;
+            
         }
         nav ul {
             
             list-style: none;
             padding: 0;
-            outline: flex;
+            margin: 0;
+          
             background: rgba(16, 16, 17, 0.808); /* Light transparent white */
-            padding: 10px; /* Optional: Adds spacing inside the box */
+            padding: 5px; /* Optional: Adds spacing inside the box */
             border: 1px solid rgba(225, 226, 228, 0.3); /* Optional: Adds a subtle border */ 
            
         }
@@ -50,7 +66,7 @@
         
             display: flex;
             flex-direction: column; /* Stack divs vertically */
-            gap: 10px; /* Adds space without affecting margins */
+        
         }
         section h2{
             margin-top: 20px;
@@ -71,7 +87,7 @@
           
         }
         .BUTTON{
-            position: fixed, center;
+            position: relative, center;
             margin-top: 120px;
           
             display: flex;
@@ -98,7 +114,7 @@
             color: white;
         }
         /*For Mobile View*/
-       /* @media (max-width: 768px) {
+        @media (max-width: 768px) {
             body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -107,53 +123,33 @@
             background-size: cover;
             text-align: center;
         }
-        header {
-            height: 80px;
-
-            padding: 20px;
+        
+        .button {
+            
+            border-radius: 25px;
+            height: 305px;
+            width: 260px;
+            background:#1d1d22ce;
+            background-size: 250px 275px;
+            background-position: bottom;    
+            background-repeat: no-repeat;
+          
+            border-color: rgb(175, 175, 179);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Pushes text to the bottom */
+            padding-top: 5px; /* Spacing for text */
+            font-size: 16px;
+            font-weight: bold;
+            color: white;  
         }
-        h2{
-            margin-top: -10px;
+    
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        section {
-            padding: 50px;
-        }
-            .BUTTON{
-                margin-top: 50px;
-                
-                background-position: center; 
-               
-            }
-            .button {
-                display: flex;
-                position: center;
-                flex-direction: column;
-                border-radius: 25px;
-                height: 305px;
-                width: 260px;
-                background-size: 250px 275px;
-            }
-            nav ul {
-                flex-direction: column;
-                text-align:start;
-            }
-        }*/
+        
     </style>
 </head>
 <body>
+    <div>
     <header><a href="index.html">HOME</a>
         <nav>
             <ul>            
@@ -175,5 +171,6 @@
         <button class="button" style="background-image: url('Software.jpg');">SOFTWARE</button>
         <button class="button" style="background-image: url('Network.jpg');">NETWORK</button>
     </div>
+</div>
 </body>
 </html>
